@@ -1,4 +1,4 @@
-# Classification of TikTok Videos
+# Classification of TikTok Videos - Machine Learning Project
 
 ## Overview
 
