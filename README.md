@@ -14,11 +14,11 @@ The main objective of this project is to develop a machine learning model to pre
 
 ## Dataset Used
 
-The dataset [tiktok_dataset.csv]() contains data of reported videos where each video  is labeled as having a claim or opinion.
+The dataset [tiktok_dataset.csv](data/tiktok_dataset.csv) contains data of reported videos where each video  is labeled as having a claim or opinion.
 
 ## Jupyter Notebook
 
-Full details of the data analysis and machine learning model development are available in the provided [Jupyter Notebook file]().
+Full details of the data analysis and machine learning model development are available in the provided [Jupyter Notebook file](Classification_of_TikTok_Videos.ipynb).
 
 ## Business Understanding
 
@@ -28,11 +28,11 @@ TikTok is the leading social platform for short-form videos. TikTok users can re
 
 A dataset having reported videos labeled as `claim` or `opinion` was provided for the project. Cleaned data has 19,084 entries with 12 attributes. Exploratory data analysis show that claim videos tend to have higher video engagement (views, likes, shares, comments, downloads) compared to opinion videos as shown in the figure below.
 
-![Median video engagement measures by claim status.]()
+![Median video engagement measures by claim status.](images/bar_chart_video_engagement_by_claim.png)
 
 There is also a statistically significant difference in proportion of claim videos between videos posted by verified and unverified accounts, where verified accounts are more likely to post opinion videos. In addition to, authors that post claim videos were also shown to have a higher likelihood of getting banned as shown in the figure below, suggesting that claim videos are more likely to have content that violate TikTok’s terms of use policy.
 
-![Video Count by Claim Status and Author Ban Status]()
+![Video Count by Claim Status and Author Ban Status](images/bar_chart_video_count_by_claim_author_ban.png)
 
 Along with video engagement attributes, video duration, verified status, and author ban status, features were engineered from the video transcription text were selected as features to be used for building the video claims classification model.
 
@@ -51,7 +51,7 @@ Random forest and XGBoost models were constructed and evaluated on validation da
 
 The top features with highest importances were also obtained and plotted in a bar chart shown below. 
 
-![Random forest model feature importances.]()
+![Random forest model feature importances.](images/bar_chart_random_forest_feature_importances.png)
 
 Unsurprisingly, the top five most important features are the video engagement attributes. While a random forest model does not provide detailed information on how these features were used to make predictions, earlier EDA has shown that claim videos have higher video engagement. The next five features were the vectorized transcription text. While these engineered features may have helped in classifying claims, these features have very low importances compared to the top five. 
 
