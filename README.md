@@ -20,11 +20,11 @@ The dataset [tiktok_dataset.csv](data/tiktok_dataset.csv) contains data of repor
 
 Full details of the data analysis and machine learning model development are available in the provided [Jupyter Notebook file](Classification_of_TikTok_Videos.ipynb).
 
-## Business Understanding
+## Project Background
 
 TikTok is the leading social platform for short-form videos. TikTok users can report videos and comments having user claims. These reported videos may have content that violates the company’s terms of use policy and needs to be reviewed by human moderators. The successful development of a predictive model will help reduce the backlog of user reports and process them more efficiently.
 
-## Data Understanding
+## Exploratory Data Analysis
 
 A dataset having reported videos labeled as `claim` or `opinion` was provided for the project. Cleaned data has 19,084 entries with 12 attributes. Exploratory data analysis show that claim videos tend to have higher video engagement (views, likes, shares, comments, downloads) compared to opinion videos as shown in the figure below.
 
@@ -36,7 +36,7 @@ There is also a statistically significant difference in proportion of claim vide
 
 Along with video engagement attributes, video duration, verified status, and author ban status, features were engineered from the video transcription text were selected as features to be used for building the video claims classification model.
 
-## Modeling and Evaluation
+## Machine Learning Model Development
 
 A successful predictive model will help streamline the review process of reported videos, but incorrect predictions come with consequences. False positive predictions will prioritize videos that are less likely to violate terms of use policy, decreasing the efficiency of the review process. On the other hand, false negatives will fail to identify videos that are more likely to violate terms of use policy and need to be prioritized for human review. False negative predictions have more negative impact to the business, so recall score will be used as an evaluation metric for the machine learning model to penalize false negative predictions.
 
