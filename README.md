@@ -18,7 +18,7 @@ The dataset [tiktok_dataset.csv](data/tiktok_dataset.csv) contains data of repor
 
 ## Jupyter Notebook
 
-Full details of the data analysis and machine learning model development are available in the provided [Jupyter Notebook file](Classification_of_TikTok_Videos.ipynb).
+Full details of the data analysis and machine learning model development are available in the provided [Jupyter Notebook file](Classification_of_TikTok_Videos.ipynb). Note that GitHub has recurring issues with opening Jupyter Notebooks. To preview the notebook, open the notebook using [NBViewer](https://nbviewer.org/).
 
 ## Project Background
 
